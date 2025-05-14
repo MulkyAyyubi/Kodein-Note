@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
 
 export const Navbar = () => {
   return (
-    <div>
-        <img src="logo.svg" alt="logo" />
+    <div className="flex flex-row justify-between px-36 py-7">
+      <img src="logo.svg" alt="logo" />
+      <div className="flex w-48 rounded-lg bg-gray-100">
+        <input
+          type="search"
+          name="search"
+          id="serach"
+          placeholder="Search..."
+          className="w-full border-none bg-transparent px-4 py-1 text-black outline-gray-300 rounded-lg font-normal"
+        />
+      </div>
     </div>
-  )
-}
+  );
+};
+
+export default Navbar;
