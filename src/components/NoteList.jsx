@@ -4,7 +4,7 @@ import NoteItem from "./NoteItem";
 export const NoteList = ({ title, notes, onDelete, onArchive }) => {
   return (
     <>
-      <div className="container flex flex-col pt-24 gap-8">
+      <div className="container flex flex-col pb-24 gap-8">
         <div className="flex items-center gap-5 mb-6">
           {title === "Active" ? (
             <img src="/Activity.svg" alt="logo activity" className="w-6" />

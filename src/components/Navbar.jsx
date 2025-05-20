@@ -1,6 +1,5 @@
-import React from "react";
+export const Navbar = ({ onSearch }) => {
 
-export const Navbar = () => {
   return (
     <div className="flex flex-row justify-between px-36 py-7">
       <img src="logo.svg" alt="logo" />
@@ -8,8 +7,9 @@ export const Navbar = () => {
         <input
           type="search"
           name="search"
-          id="serach"
+          id="search"
           placeholder="Search..."
+          onChange={(e) => onSearch(e.target.value)}
           className="w-full border-none bg-transparent px-4 py-1 text-black outline-gray-300 rounded-lg font-normal"
         />
       </div>
