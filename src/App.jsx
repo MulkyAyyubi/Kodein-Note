@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Notes from "./pages/Notes";
 
 function App() {
-  const loadNotes = () => JSON.parse(localStorage.getItem("notes") || []);
+  const loadNotes = () => JSON.parse(localStorage.getItem("notes")) || [];
   const [notes, setNotes] = useState(loadNotes);
   const [filteredNotes, setFilteredNotes] = useState(notes);
 
